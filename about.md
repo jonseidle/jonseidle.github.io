@@ -1,19 +1,18 @@
 ---
 layout: page
-title: About Halcyon
+title: About the Choir
 menutitle: About
 order: 4
 ---
+<div style="float:left">
+	<img src="/assets/FullChoir.jpg" style="padding:10px 0px 10px 0px" />
+</div>
+<div>
+	<p>Halcyon Chamber Choir is an award-winning choir known for their exquisite choral sound, dramatic presentations and sheer energy onstage. Their repertoire ranges from a cappella folk songs to Broadway show tunes, from traditional classics to contemporary showstoppers. Whatever the style, their performances will entertain and thrill you!</p>
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+	<p>Under the direction of Hart Godden, Artistic Director,  Halcyon has always explored the very best in choral music, and was the first choir to present the works of Morten Lauridsen and Karl Jenkins in Western Canada. They also gave the premiere performance of Jenkins’ Stabat Mater in Canada, with Leora Godden as soloist.</p>
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+	<p>In addition to their unique choral concerts, Halcyon has regularly appeared with the Regina Symphony Orchestra and the Regina Philharmonic Chorus, including performances of Handel’s Messiah, Mozart’s Requiem, Beethoven’s 9th Symphony, Jenkins’  The Armed Man, and Brahm’s German Requiem. Halcyon was also the featured Choir in the RSO’s Broadway Performance, as well as the highly successful Video Games Live!</p>
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+	<p>If you are interested in auditioning for Halcyon, contact Hart Godden, Artistic Director, at 306-535-8565 or <a href="mailto:hartgodden@hotmail.com" target="_blank">hartgodden@hotmail.com</a>.</p>
+</div>

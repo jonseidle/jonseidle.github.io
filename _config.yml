@@ -22,6 +22,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jonseidle.github.io/" # the base hostname & protocol for your site
 facebook_username: halcyonchoir
 logo: /assets/HalcyonLogo.jpg
+collections: 
+  members:
+    output: true
 
 # Build settings
 markdown: kramdown

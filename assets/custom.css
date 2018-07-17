@@ -1,0 +1,50 @@
+/* Undo some basic stuff from main.css */
+.site-header {
+	border-top:0 !important;
+}
+.site-footer {
+	padding:15px 0 !important;
+}
+.footer-col-3 {
+	text-align: right;
+}
+h1.post-title {
+	font-family: 'Merienda', cursive;
+	font-size: 38px;
+	text-align: center;
+}
+
+/* background image */
+body {
+	background-image: url("Background.jpg");
+}
+
+/* Nav area */
+nav.site-nav { 
+	line-height:115px;
+}
+nav.site-nav a {
+	font-family: 'Merienda', cursive;
+	vertical-align:bottom;
+}
+
+/* Other personalizations */
+.outer {
+	background-color:white;
+	margin-right: auto;
+	margin-left: auto;
+}
+img.memberImg {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	width:500px;
+	padding-bottom:20px;
+}
+.memberP {
+	font-size:18px;
+	line-height: 1.4;
+}
+img.fullPad {
+	padding: 10px;
+}

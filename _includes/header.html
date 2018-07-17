@@ -1,17 +1,15 @@
 <header class="site-header">
 	<div class="wrapper">
 		<div class="site-title">
-			<a href="{{ site.baseurl }}/" ><img class="fullPad" style="padding:10px" src="{{ site.logo }}"></a>
+			<a href="{{ site.baseurl }}/" ><img class="fullPad" src="{{ site.logo }}"></a>
 		</div>
 		<nav class="site-nav">
 			{% assign navPages = site.pages | sort:"order" | reverse %}
-			<div>
-				{% for page in navPages %}
-					{% if page.menutitle %}
-						<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.menutitle }}</a>
-					{% endif %}
-				{% endfor %}	
-			</div>
+			{% for page in navPages %}
+				{% if page.menutitle %}
+					<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.menutitle }}</a>
+				{% endif %}
+			{% endfor %}	
 		</nav>
 	</div>
 </header>

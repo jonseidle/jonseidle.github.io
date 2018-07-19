@@ -15,8 +15,11 @@ order: 2
 			{% if rowMod == 0 %}
 				</tr><tr>
 			{% endif %}
-			<td>
-				<a href="{{ page.url }}"><img src="/assets/members/{{ page.name }}.jpg" alt="{{ page.name }}" width="150" />{{ page.name }}</a>
+			<td style="text-align:center;">
+				<a href="{{ page.url }}"><img src="/assets/members/{{ page.name }}.jpg" alt="{{ page.name }}" style="width:150px;" />{{ page.name }}</a><br/>
+				{% if page.active %}					
+					<span style="font-size:smaller">Active {{ "now" | date:"%Y" | minus:page.active }} years</span>
+				{% endif %}
 			</td>
 		{% endfor %}
 		</tr>

@@ -1,4 +1,4 @@
-/* Undo some basic stuff from main.css */
+/* Undo/tweak some basic stuff from main.css */
 .site-header {
 	border-top:0 !important;
 }
@@ -17,6 +17,9 @@ h1.post-title {
 /* background image */
 body {
 	background-image: url("Background.jpg");
+	background-attachment:fixed;
+	background-position:top;
+	background-repeat:no-repeat;
 }
 
 /* Nav area */

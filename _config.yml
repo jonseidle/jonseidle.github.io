@@ -23,9 +23,11 @@ url: "https://jonseidle.github.io/" # the base hostname & protocol for your site
 facebook_username: halcyonchoir
 instagram_username: halcyonsingsyqr
 logo: /assets/HalcyonLogo.jpg
+homeImage: /assets/FullChoir-wide.jpg
 collections: 
   members:
     output: true
+  cards:
     
 # Build settings
 markdown: kramdown

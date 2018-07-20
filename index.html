@@ -3,4 +3,17 @@ layout: default
 menutitle: Home
 order: 5
 ---
-Content soon to come.
+<div class="oversize">
+	<img src="{{ site.homeImage }}" style="	padding-bottom:20px;" />
+</div>
+<div class="cardSection">
+	{% for card in site.cards %}
+	<div class="cardDiv">
+		<h3>{{ card.title }}</h3>
+		<div class="cardImg">
+			<img src="/assets/{{ card.image }}"/>
+		</div>
+		<p>{{ card.blurb }}</p>
+	</div>
+	{% endfor %}
+</div>

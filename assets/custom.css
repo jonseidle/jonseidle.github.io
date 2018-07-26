@@ -47,8 +47,12 @@ nav.site-nav a {
 }
 .cardDiv {
 	float:left;
-	width:30%;
-	padding: 0px 10px;
+	/* width:31.53%; /* (800 max width - 30*2 outer padding - 20*2 card padding) / 3 cards / (800 - 30*2)  */
+	width:calc((100% - (20px * 2)) / 3);
+	padding-right:20px;
+}
+.cardDiv:last-child {
+	padding-right:0px;
 }
 .cardImg {
 	border: 1px solid #D3D3D3;
@@ -59,8 +63,9 @@ nav.site-nav a {
     display: table;
     clear: both;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 	.cardDiv {width: 100%;}
+	.cardImg {border:none;}
 }
 img.memberImg {
 	margin-left:auto;

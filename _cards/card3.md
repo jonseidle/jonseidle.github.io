@@ -1,5 +1,5 @@
 ---
-title: Test title
+title: 3rd Section (TBD)
 image: SheetMusic.jpg
-blurb:
+blurb: -Special Concert feature?<br/>-Info for joining the choir?
 ---

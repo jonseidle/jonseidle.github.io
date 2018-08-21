@@ -63,10 +63,7 @@ nav.site-nav a {
     display: table;
     clear: both;
 }
-@media screen and (max-width: 800px) {
-	.cardDiv {width: 100%;}
-	.cardImg {border:none;}
-}
+
 img.memberImg {
 	margin-left:auto;
 	margin-right:auto;
@@ -80,4 +77,9 @@ img.memberImg {
 }
 img.fullPad {
 	padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+	.cardDiv {width: 100%;}
+	.cardImg {border:none;}
 }

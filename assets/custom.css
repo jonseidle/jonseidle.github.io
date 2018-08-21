@@ -87,11 +87,13 @@ img.fullPad {
 @media screen and (max-width: 600px) {
     .site-nav {		
 		display: inline;
-		width: 220px;		
+		width: 195px;
+	}
+	.site-nav .page-link {
+		margin-left: 0px;
 	}
 	.site-nav .page-link:nth-child(odd) {
-		float: left;
-		margin-left: 0px;
+		float: left;		
 	}
 	.site-nav .page-link:nth-child(even) {
 		float: right;

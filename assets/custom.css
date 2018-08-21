@@ -83,3 +83,17 @@ img.fullPad {
 	.cardDiv {width: 100%;}
 	.cardImg {border:none;}
 }
+
+@media screen and (max-width: 600px) {
+    .site-nav {		
+		display: inline;
+		width: 220px;		
+	}
+	.site-nav .page-link:nth-child(odd) {
+		float: left;
+		margin-left: 0px;
+	}
+	.site-nav .page-link:nth-child(even) {
+		float: right;
+	}
+}

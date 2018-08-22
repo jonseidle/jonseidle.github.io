@@ -85,17 +85,17 @@ img.fullPad {
 }
 
 @media screen and (max-width: 600px) {
-    .site-nav {		
+    #my-site-nav {		
 		display: inline;
 		width: 195px;
 	}
-	.site-nav .page-link {
+	#my-site-nav .page-link {
 		margin-left: 0px;
 	}
-	.site-nav .page-link:nth-child(odd) {
+	#my-site-nav .page-link:nth-child(odd) {
 		float: left;		
 	}
-	.site-nav .page-link:nth-child(even) {
+	#my-site-nav .page-link:nth-child(even) {
 		float: right;
 	}
 }

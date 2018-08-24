@@ -48,7 +48,7 @@ nav.site-nav a {
 .cardDiv {
 	float:left;
 	/* width:31.53%; /* (800 max width - 30*2 outer padding - 20*2 card padding) / 3 cards / (800 - 30*2)  */
-	width:calc((100% - (20px * 2)) / 3);
+	width:calc((99.9% - (20px * 2)) / 3);
 	padding-right:20px;
 }
 .cardDiv:last-child {
@@ -77,6 +77,15 @@ img.memberImg {
 }
 img.fullPad {
 	padding: 10px;
+}
+
+div.member-square {
+	float:left; 
+	text-align:center;
+	padding: 8px 8px;
+	border: 1px solid #e8e8e8;
+	width: 126px;
+	height: 158px;
 }
 
 @media screen and (max-width: 800px) {

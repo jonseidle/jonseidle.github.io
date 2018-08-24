@@ -7,21 +7,13 @@ order: 2
 <div>
 	<p>Click on a Halcyon member below to learn more about them!</p>
 </div>
-<table>
-	<tbody>
-		<tr>
-		{% for page in site.members %}
-			{% assign rowMod = forloop.index0 | modulo:5 %}
-			{% if rowMod == 0 %}
-				</tr><tr>
-			{% endif %}
-			<td style="text-align:center;">
-				<a href="{{ page.url }}"><img src="/assets/members/{{ page.name }}.jpg" alt="{{ page.name }}" style="width:150px;" />{{ page.name }}</a><br/>
-				{% if page.active %}					
-					<span style="font-size:smaller">Active {{ "now" | date:"%Y" | minus:page.active }} years</span>
-				{% endif %}
-			</td>
-		{% endfor %}
-		</tr>
-	</tbody>
-</table>
+<div>
+	{% for page in site.members %}
+	<div class="member-square">
+		<a href="{{ page.url }}"><img src="/assets/members/{{ page.name }}.jpg" alt="{{ page.name }}" style="width:130px;" />{{ page.name }}</a><br/>
+		{% if page.active %}					
+			<span style="font-size:smaller">Active {{ "now" | date:"%Y" | minus:page.active }} years</span>
+		{% endif %}
+	</div>
+	{% endfor %}
+</div>

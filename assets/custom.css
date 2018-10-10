@@ -46,8 +46,7 @@ nav.site-nav a {
 	margin-right:-30px;
 }
 .cardDiv {
-	float:left;
-	/* width:31.53%; /* (800 max width - 30*2 outer padding - 20*2 card padding) / 3 cards / (800 - 30*2)  */
+	float:left;	
 	width:calc((99.9% - (20px * 2)) / 3);
 	padding-right:20px;
 }
@@ -86,6 +85,30 @@ div.member-square {
 	border: 1px solid #e8e8e8;
 	width: 126px;
 	height: 158px;
+}
+
+a.hoverImage>img {
+	display:none;
+}
+a.hoverImage:hover>img {
+	display:block;
+	position:fixed;
+	width: 650px;
+	top: 121px;
+	left: 50%;
+	transform: translate(-50%);
+	-webkit-animation: fadein 0.7s;
+    animation: fadein 0.7s;
+}
+
+@-webkit-keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;)	
+}
+
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;)
 }
 
 @media screen and (max-width: 800px) {

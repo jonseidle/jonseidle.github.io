@@ -93,22 +93,13 @@ a.hoverImage>img {
 a.hoverImage:hover>img {
 	display:block;
 	position:fixed;
-	width: 650px;
+	width: 700px;
+	border-style: ridge;
 	top: 121px;
 	left: 50%;
 	transform: translate(-50%);
 	-webkit-animation: fadein 0.7s;
     animation: fadein 0.7s;
-}
-
-@-webkit-keyframes fadein {
-	from {opacity: 0;}
-	to {opacity: 1;)	
-}
-
-@keyframes fadein {
-	from {opacity: 0;}
-	to {opacity: 1;)
 }
 
 @media screen and (max-width: 800px) {
@@ -130,4 +121,14 @@ a.hoverImage:hover>img {
 	#my-site-nav .page-link:nth-child(even) {
 		float: right;
 	}
+}
+
+@-webkit-keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;)	
+}
+
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;)
 }

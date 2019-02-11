@@ -19,10 +19,9 @@ h3 {
 
 /* background image */
 body {
-	background-image: url("Background.jpg");
-	background-attachment:fixed;
-	background-position:top;
-	background-repeat:no-repeat;
+	background: fixed no-repeat top/cover url("Background.jpg");	
+	/* This is just for IE. Every other browser gets overridden by main.css */
+	font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /* Nav area */

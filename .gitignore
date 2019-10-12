@@ -12,6 +12,7 @@
 /.sass-cache/
 /_site/
 .jekyll-metadata
+/.jekyll-cache
 
 # Used by dotenv library to load environment variables.
 # .env

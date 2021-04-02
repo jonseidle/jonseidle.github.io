@@ -7,7 +7,7 @@
 			{% assign navPages = site.pages | sort:"order" | reverse %}
 			{% for page in navPages %}
 				{% if page.menutitle %}
-					<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.menutitle }}</a>
+					<a class="page-link" href="{{ page.url }}">{{ page.menutitle }}</a>
 				{% endif %}
 			{% endfor %}	
 		</nav>

@@ -1,5 +1,5 @@
 ---
 title: Mark Your Calendar
 image: Calendar.jpg
-blurb: <strong><a class="hoverImage">Darkness To Light<img src="assets/DarknessToLight.jpg"/></a></strong><br/>Rescheduled for Sept 10, 2022<br/><strong>Halcyon Concert</strong> (Title TBD)<br/>Nov 27, 2022<br/><strong>Messiah Concerts</strong><br/>Dec 5 & 6<br/>
+blurb: <strong>Northern Lights</strong><br/>&nbsp;&nbsp;7:30pm Nov 25, 2022 @ Knox-Met<br/><strong>Messiah Benefit Concerts</strong><br/>&nbsp;&nbsp;Dec 5 & 6<br/>
 ---

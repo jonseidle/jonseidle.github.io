@@ -92,10 +92,10 @@ a.hoverImage>img {
 a.hoverImage:hover>img {
 	display:block;
 	position:fixed;
-	max-width: 700px;
-	max-height: 700px;
+	max-width: 70%;
+	max-height: 80%;
 	border-style: ridge;
-	top: 28px;
+	top: 120px;
 	left: 50%;
 	transform: translate(-50%);
 	-webkit-animation: fadein 0.7s;
@@ -107,7 +107,11 @@ a.hoverImage:hover>img {
 	.cardImg {border:none;}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-height: 630px) {
+	a.hoverImage:hover>img {top:9%;}
+}
+
+@media screen and (max-width: 630px) {
     #my-site-nav {		
 		display: inline;
 		width: 195px;

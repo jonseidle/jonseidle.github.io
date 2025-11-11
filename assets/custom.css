@@ -61,31 +61,26 @@ nav.site-nav a {
     display: table;
     clear: both;
 }
-
-img.memberImg {
-	margin-left:auto;
-	margin-right:auto;
-	display:block;
-	width:500px;
-	padding-bottom:20px;
-}
-.memberP {
-	font-size:18px;
-	line-height: 1.4;
-}
 img.fullPad {
 	padding: 10px;
 }
-
-div.member-square {
-	float:left; 
-	text-align:center;
-	padding: 8px 8px;
-	border: 1px solid #e8e8e8;
-	width: 126px;
-	height: 158px;
+.posters {
+	display: flex; 
+	flex-wrap: wrap;
 }
-
+.poster-squares {
+	flex-grow: 1;
+	flex-basis: 188px;
+	max-width: 50%;
+	border: 1px solid #e8e8e8;
+	background: url(/assets/triangle-tiles.jpg);
+}
+.poster-squares>a {
+	vertical-align: middle;
+}
+.poster-squares>a>img {
+	vertical-align: middle;
+}
 a.hoverImage>img {
 	display:none;
 }
@@ -106,15 +101,16 @@ a.hoverImage:hover>img {
 	.cardDiv {width: 100%;}
 	.cardImg {border:none;}
 }
-
-@media screen and (max-height: 630px) {
+@media screen and (max-height: 600px) {
 	a.hoverImage:hover>img {top:9%;}
 }
-
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 600px) {
+	.poster-squares {
+		max-width: unset;
+	}
     #my-site-nav {		
 		display: inline;
-		width: 195px;
+		width: 205px;
 	}
 	#my-site-nav .page-link {
 		margin-left: 0px;
@@ -126,13 +122,11 @@ a.hoverImage:hover>img {
 		float: right;
 	}
 }
-
 @-webkit-keyframes fadein {
 	from {opacity: 0;}
-	to {opacity: 1;)	
+	to {opacity: 1;}	
 }
-
 @keyframes fadein {
 	from {opacity: 0;}
-	to {opacity: 1;)
+	to {opacity: 1;}
 }

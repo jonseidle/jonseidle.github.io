@@ -1,0 +1,23 @@
+---
+layout: page
+title: Past Concert Posters
+menutitle: Past Concerts
+order: 2
+---
+<div>
+    <p style="font-size: larger;">Below is a collection of posters for our past concerts. Click or tap to see more.</p>
+</div>
+<div class="posters">
+    {% assign nowTime = 'now' | date: '%s' %}
+	{% for concert in site.concerts %}
+        {% assign concertDate = concert.date | date: '%s' %}
+        {% if concertDate < nowTime %}
+            <div class="poster-squares">
+                <a href="{{ concert.url }}">
+                    <img src="/assets/concerts/{{ concert.img }}" alt="{{ concert.title }}" />
+                </a>
+                <br/>
+            </div>
+        {% endif %}
+	{% endfor %}
+</div>

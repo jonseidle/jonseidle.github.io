@@ -25,7 +25,7 @@ instagram_username: halcyonsingsyqr
 logo: /assets/HalcyonLogo.jpg
 homeImage: /assets/FullChoir-wide.jpg
 collections: 
-  members:
+  concerts:
     output: true
   cards:
     

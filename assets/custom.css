@@ -1,9 +1,43 @@
-/* Undo/tweak some basic stuff from main.css */
-.site-header {
-	border-top:0 !important;
+/* Variables and Dark/light theme*/
+:root {
+	--bgImage: url("Background.jpg");
+	--bg: white;
+	--text: #111;
+	--padLR: 15px;
+	--numCards: 2;
+	--gap: 15px;
 }
-.site-footer {
-	padding:15px 0 !important;
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bgImage: url("Background-dark.jpg");
+		--bg: #292929;
+		--text: #EEE;
+	}	
+	header.site-header img.fullPad {
+		content:url("/assets/HalcyonLogo-dark.png");
+	}
+}
+
+/* Undo/tweak some basic stuff from main.css */
+header.site-header {
+	border-top: 0;
+	border-bottom: 1px solid #999;	
+}
+div.page-content {
+	padding-inline: var(--padLR);
+	padding-block: 20px;
+}
+div.page-content:has(.oversize) {
+	/* Removes the top padding from home page image */
+	padding-top: 0px;
+}
+div.wrapper {
+	padding: 0;
+	max-width: 800px;
+}
+footer.site-footer {
+	padding: var(--padLR) 0;
+	border-top: 1px solid #999;
 }
 .footer-col-3 {
 	text-align: right;
@@ -16,70 +50,41 @@ h1.post-title {
 h3 {
 	font-family: 'Merienda', cursive;
 }
-
-/* background image */
 body {
-	background: fixed no-repeat top/cover url("Background.jpg");	
-	/* This is just for IE. Every other browser gets overridden by main.css */
-	font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background: fixed no-repeat top/cover var(--bgImage);
 }
 
 /* Nav area */
-nav.site-nav { 
+nav#my-site-nav { 
 	line-height:115px;
 }
-nav.site-nav a {
+nav#my-site-nav a {
+	color: var(--text);
 	font-family: 'Merienda', cursive;
 	vertical-align:bottom;
 }
 
 /* Other personalizations */
 .outer {
-	background-color:white;
-	margin-right: auto;
-	margin-left: auto;
+	background-color: var(--bg);
+	color: var(--text);
+	margin-inline: auto;
 }
 .oversize {
-	margin-top:-30px;
-	margin-left:-30px;
-	margin-right:-30px;
+	margin-inline: calc(-1 * var(--padLR));
 }
-.cardDiv {
-	float:left;	
-	width:calc((99.9% - (20px * 2)) / 2); /*Adjust divisor to match number of cards*/
-	padding-right:20px;
-}
-.cardDiv:last-child {
-	padding-right:0px;
+.cardSection {
+	display: grid;
+	grid-template-columns: repeat(var(--numCards), 1fr);
+	gap: var(--gap);
 }
 .cardImg {
-	border: 1px solid #D3D3D3;
-	padding: 3px;
+	border: 1px solid #999;
+	padding: 1px;
 }
-.cardSection:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 img.fullPad {
 	padding: 10px;
-}
-.posters {
-	display: flex; 
-	flex-wrap: wrap;
-}
-.poster-squares {
-	flex-grow: 1;
-	flex-basis: 188px;
-	max-width: 50%;
-	border: 1px solid #e8e8e8;
-	background: url(/assets/triangle-tiles.jpg);
-}
-.poster-squares>a {
-	vertical-align: middle;
-}
-.poster-squares>a>img {
-	vertical-align: middle;
 }
 a.hoverImage>img {
 	display:none;
@@ -97,30 +102,45 @@ a.hoverImage:hover>img {
     animation: fadein 0.7s;
 }
 
-@media screen and (max-width: 800px) {
-	.cardDiv {width: 100%;}
-	.cardImg {border:none;}
+/* Past concert posters */
+.posters {
+	display: flex; 
+	flex-wrap: wrap;
 }
+.poster-squares {
+	flex-grow: 1;
+	flex-basis: 188px;
+	max-width: 50%;
+	border: 1px solid #e8e8e8;
+	background: url(/assets/triangle-tiles.jpg);
+}
+.poster-squares>a {
+	vertical-align: middle;
+}
+.poster-squares>a>img {
+	vertical-align: middle;
+}
+
+/* screen-size and other tweaks */
 @media screen and (max-height: 600px) {
 	a.hoverImage:hover>img {top:9%;}
 }
+@media screen and (max-width: 700px) {
+	.cardDiv {width: 100%;}
+	.cardImg {border:none;}
+	.cardSection {display: block;}
+}
 @media screen and (max-width: 600px) {
-	.poster-squares {
-		max-width: unset;
-	}
+	.poster-squares {max-width: unset;}
     #my-site-nav {		
 		display: inline;
 		width: 205px;
-	}
-	#my-site-nav .page-link {
-		margin-left: 0px;
-	}
-	#my-site-nav .page-link:nth-child(odd) {
-		float: left;		
-	}
-	#my-site-nav .page-link:nth-child(even) {
-		float: right;
-	}
+		background-color: var(--bg);
+		border: 1px solid #999
+	}	
+	#my-site-nav .page-link {margin-left: 0px;}
+	#my-site-nav .page-link:nth-child(odd) {float: left;}
+	#my-site-nav .page-link:nth-child(even) {float: right;}
 }
 @-webkit-keyframes fadein {
 	from {opacity: 0;}

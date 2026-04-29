@@ -1,5 +1,5 @@
 ---
 title: Mark Your Calendar
 image: Calendar.jpg
-blurb: <strong>Requiem And Radiance</strong><br/>&nbsp;&nbsp;Regina Philharmonic Chorus, with Halcyon<br/>&nbsp;&nbsp;3pm Apr. 19, 2026 @ Knox-Met<br/>
+blurb: <strong>Stay tuned for our Jazz show and more</strong><br/>&nbsp;&nbsp;Coming up this fall!<br/>
 ---

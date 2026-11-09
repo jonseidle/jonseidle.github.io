@@ -1,5 +1,6 @@
 /* Variables and Dark/light theme*/
 :root {
+	--historyTiles: url("triangle-tiles.jpg");
 	--bgImage: url("Background.jpg");
 	--bg: white;
 	--text: #111;
@@ -9,6 +10,7 @@
 }
 @media (prefers-color-scheme: dark) {
 	:root {
+		--historyTiles: url("triangle-tiles-dark.jpg");
 		--bgImage: url("Background-dark.jpg");
 		--bg: #292929;
 		--text: #EEE;
@@ -108,17 +110,14 @@ a.hoverImage:hover>img {
 	flex-wrap: wrap;
 }
 .poster-squares {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-grow: 1;
 	flex-basis: 188px;
 	max-width: 50%;
 	border: 1px solid #e8e8e8;
-	background: url(/assets/triangle-tiles.jpg);
-}
-.poster-squares>a {
-	vertical-align: middle;
-}
-.poster-squares>a>img {
-	vertical-align: middle;
+	background: var(--historyTiles);
 }
 
 /* screen-size and other tweaks */
